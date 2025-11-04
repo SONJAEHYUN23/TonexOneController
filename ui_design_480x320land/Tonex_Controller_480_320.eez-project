@@ -2087,15 +2087,15 @@
                       "timeline": [],
                       "eventHandlers": [
                         {
-                          "objID": "76270896-bf9d-43db-f828-e16a600fb440",
-                          "eventName": "SHORT_CLICKED",
+                          "objID": "0cdc498b-d67a-424b-d524-589653338e5a",
+                          "eventName": "LONG_PRESSED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
                         },
                         {
-                          "objID": "0cdc498b-d67a-424b-d524-589653338e5a",
-                          "eventName": "LONG_PRESSED",
+                          "objID": "76270896-bf9d-43db-f828-e16a600fb440",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0

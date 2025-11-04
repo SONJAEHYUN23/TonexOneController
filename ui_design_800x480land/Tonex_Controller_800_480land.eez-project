@@ -1514,7 +1514,7 @@
                     "conditionalStyles": [],
                     "childStyles": []
                   },
-                  "hiddenInEditor": true,
+                  "hiddenInEditor": false,
                   "timeline": [],
                   "eventHandlers": [],
                   "identifier": "ui_BottomPanelTonex",
@@ -1538,7 +1538,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1594,7 +1594,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1657,7 +1657,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1720,7 +1720,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1783,7 +1783,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1846,7 +1846,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1909,7 +1909,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -1972,7 +1972,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -2035,7 +2035,7 @@
                         "conditionalStyles": [],
                         "childStyles": []
                       },
-                      "hiddenInEditor": true,
+                      "hiddenInEditor": false,
                       "timeline": [],
                       "eventHandlers": [
                         {
@@ -2161,7 +2161,7 @@
                         },
                         {
                           "objID": "4e4b9ef2-0763-44cb-a07f-6794212d431d",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2225,7 +2225,7 @@
                         },
                         {
                           "objID": "1d3fcfd3-0b13-4f68-a6b8-0fd2eddf5d03",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2288,7 +2288,7 @@
                         },
                         {
                           "objID": "358903d4-801c-40fc-93b2-30dc46cce7e0",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2351,7 +2351,7 @@
                         },
                         {
                           "objID": "e703c072-0c57-46cf-fbb4-03ecb495f0a0",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2414,7 +2414,7 @@
                         },
                         {
                           "objID": "95568315-0e99-48c0-dd97-8adb1f4fdc1a",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2477,7 +2477,7 @@
                         },
                         {
                           "objID": "9d68d5ef-0193-4fd7-9afc-245b1a2b6c7b",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2540,7 +2540,7 @@
                         },
                         {
                           "objID": "0b07f40d-365c-4288-a353-368ebd86b9f8",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2603,7 +2603,7 @@
                         },
                         {
                           "objID": "24432f8f-33c7-4e01-8a6e-2a725943664a",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2666,7 +2666,7 @@
                         },
                         {
                           "objID": "2b63097f-1501-4edd-b215-55719027c8ca",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2729,7 +2729,7 @@
                         },
                         {
                           "objID": "744c01d7-a1d8-4c1d-ae2e-e2dc5d94861b",
-                          "eventName": "PRESSED",
+                          "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
@@ -2823,7 +2823,7 @@
                     }
                   ],
                   "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "hiddenFlag": false,
+                  "hiddenFlag": true,
                   "hiddenFlagType": "literal",
                   "clickableFlag": false,
                   "clickableFlagType": "literal",
