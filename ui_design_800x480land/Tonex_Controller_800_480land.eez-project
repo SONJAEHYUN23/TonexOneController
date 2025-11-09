@@ -14695,7 +14695,7 @@
                       },
                       "group": "",
                       "groupIndex": 0,
-                      "options": "Comp\nComp4\nBoost\nMicro Boost\nB-Boost\nToucher\nCrier\nOcta\nPitch\nDetune",
+                      "options": "Green OD\nYellow OD\nSuper OD\nSM Dist\nPlustortion\nLa Charger\nDarktale\nSora Fuzz\nRed Haze\nBass OD",
                       "optionsType": "literal",
                       "selected": 0,
                       "selectedType": "literal",
@@ -15143,7 +15143,7 @@
                           "userData": 0
                         }
                       ],
-                      "identifier": "ui_ValDsteParam2Slider",
+                      "identifier": "ui_ValDstParam2Slider",
                       "leftUnit": "px",
                       "topUnit": "px",
                       "widthUnit": "px",
