@@ -24751,6 +24751,189 @@
                       "textType": "literal",
                       "longMode": "WRAP",
                       "recolor": false
+                    },
+                    {
+                      "objID": "9c5dec7d-fecd-412e-83fa-8ec507e7e664",
+                      "type": "LVGLLabelWidget",
+                      "left": 13,
+                      "top": 21,
+                      "width": 115,
+                      "height": 27,
+                      "customInputs": [],
+                      "customOutputs": [],
+                      "style": {
+                        "objID": "709c0911-4472-4378-c663-b102970eb11b",
+                        "useStyle": "default",
+                        "conditionalStyles": [],
+                        "childStyles": []
+                      },
+                      "timeline": [],
+                      "eventHandlers": [],
+                      "identifier": "ui_ValPatchVolLabel",
+                      "leftUnit": "px",
+                      "topUnit": "px",
+                      "widthUnit": "content",
+                      "heightUnit": "content",
+                      "children": [],
+                      "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+                      "hiddenFlagType": "literal",
+                      "clickableFlagType": "literal",
+                      "flagScrollbarMode": "",
+                      "flagScrollDirection": "",
+                      "scrollSnapX": "",
+                      "scrollSnapY": "",
+                      "checkedStateType": "literal",
+                      "disabledStateType": "literal",
+                      "states": "",
+                      "localStyles": {
+                        "objID": "af773a29-af23-46a6-be12-62d07cb10858",
+                        "definition": {
+                          "MAIN": {
+                            "DEFAULT": {
+                              "text_font": "MONTSERRAT_24",
+                              "align": "LEFT_MID"
+                            }
+                          }
+                        }
+                      },
+                      "group": "",
+                      "groupIndex": 0,
+                      "text": "Patch Vol",
+                      "textType": "literal",
+                      "longMode": "WRAP",
+                      "recolor": false
+                    },
+                    {
+                      "objID": "e6301406-f3ef-41d9-db52-dcfd21bbd269",
+                      "type": "LVGLSliderWidget",
+                      "left": 168,
+                      "top": 22,
+                      "width": 511,
+                      "height": 20,
+                      "customInputs": [],
+                      "customOutputs": [],
+                      "style": {
+                        "objID": "29eecc0b-5b33-487e-97cd-f5771ebb78c6",
+                        "useStyle": "default",
+                        "conditionalStyles": [],
+                        "childStyles": []
+                      },
+                      "timeline": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "b4bb984a-759e-4fc7-9a21-fe2c43c9161d",
+                          "eventName": "RELEASED",
+                          "handlerType": "action",
+                          "action": "ParameterChanged",
+                          "userData": 0
+                        }
+                      ],
+                      "identifier": "ui_ValPatchVolSlider",
+                      "leftUnit": "px",
+                      "topUnit": "px",
+                      "widthUnit": "px",
+                      "heightUnit": "px",
+                      "children": [],
+                      "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+                      "hiddenFlagType": "literal",
+                      "clickableFlag": true,
+                      "clickableFlagType": "literal",
+                      "flagScrollbarMode": "",
+                      "flagScrollDirection": "",
+                      "scrollSnapX": "",
+                      "scrollSnapY": "",
+                      "checkedStateType": "literal",
+                      "disabledStateType": "literal",
+                      "states": "",
+                      "localStyles": {
+                        "objID": "14ee8ef0-6c09-49b8-d5f4-1853cdca06fd",
+                        "definition": {
+                          "MAIN": {
+                            "DEFAULT": {
+                              "align": "LEFT_MID",
+                              "bg_color": "#aeb1b4"
+                            },
+                            "SCROLLED": {
+                              "bg_color": "#aeb1b4"
+                            }
+                          },
+                          "INDICATOR": {
+                            "DEFAULT": {
+                              "bg_color": "#3890d5"
+                            }
+                          },
+                          "KNOB": {
+                            "DEFAULT": {
+                              "bg_color": "#ffffff"
+                            }
+                          }
+                        }
+                      },
+                      "group": "",
+                      "groupIndex": 0,
+                      "min": 0,
+                      "minType": "literal",
+                      "max": 100,
+                      "maxType": "literal",
+                      "mode": "NORMAL",
+                      "value": -64,
+                      "valueType": "literal",
+                      "previewValue": 25,
+                      "valueLeft": 0,
+                      "valueLeftType": "literal",
+                      "previewValueLeft": 0,
+                      "enableAnimation": false
+                    },
+                    {
+                      "objID": "3cefe5c4-8439-4622-88c2-c4fb844f8873",
+                      "type": "LVGLLabelWidget",
+                      "left": 703,
+                      "top": 21,
+                      "width": 16,
+                      "height": 27,
+                      "customInputs": [],
+                      "customOutputs": [],
+                      "style": {
+                        "objID": "7d61abd2-9c10-44ca-cd09-3c6aba4f4988",
+                        "useStyle": "default",
+                        "conditionalStyles": [],
+                        "childStyles": []
+                      },
+                      "timeline": [],
+                      "eventHandlers": [],
+                      "identifier": "ui_ValPatchVolValue",
+                      "leftUnit": "px",
+                      "topUnit": "px",
+                      "widthUnit": "content",
+                      "heightUnit": "content",
+                      "children": [],
+                      "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+                      "hiddenFlagType": "literal",
+                      "clickableFlagType": "literal",
+                      "flagScrollbarMode": "",
+                      "flagScrollDirection": "",
+                      "scrollSnapX": "",
+                      "scrollSnapY": "",
+                      "checkedStateType": "literal",
+                      "disabledStateType": "literal",
+                      "states": "",
+                      "localStyles": {
+                        "objID": "8b46a0fc-57ca-44fe-9b4c-41e80828316a",
+                        "definition": {
+                          "MAIN": {
+                            "DEFAULT": {
+                              "text_font": "MONTSERRAT_24",
+                              "align": "LEFT_MID"
+                            }
+                          }
+                        }
+                      },
+                      "group": "",
+                      "groupIndex": 0,
+                      "text": "0",
+                      "textType": "literal",
+                      "longMode": "WRAP",
+                      "recolor": false
                     }
                   ],
                   "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SNAPPABLE",
