@@ -11711,7 +11711,7 @@
             {
               "objID": "bae65739-be8c-4cf5-f502-b9b105d36067",
               "type": "LVGLImageWidget",
-              "left": 219,
+              "left": 438,
               "top": 293,
               "width": 42,
               "height": 27,
@@ -11759,7 +11759,7 @@
               "setPivot": false,
               "pivotX": 0,
               "pivotY": 0,
-              "zoom": 240,
+              "zoom": 256,
               "angle": 0,
               "innerAlign": "CENTER"
             }
@@ -24951,7 +24951,7 @@
             {
               "objID": "d2793565-3886-41e7-f9ca-9582d42a2fea",
               "type": "LVGLImageWidget",
-              "left": 219,
+              "left": 438,
               "top": 293,
               "width": 42,
               "height": 27,
@@ -24999,7 +24999,7 @@
               "setPivot": false,
               "pivotX": 0,
               "pivotY": 0,
-              "zoom": 240,
+              "zoom": 256,
               "angle": 0,
               "innerAlign": "CENTER"
             }
