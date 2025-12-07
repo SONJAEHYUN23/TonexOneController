@@ -910,7 +910,7 @@
                       "MAIN": {
                         "DEFAULT": {
                           "text_color": "808080",
-                          "text_font": "MONTSERRAT_30",
+                          "text_font": "MONTSERRAT_36",
                           "border_color": "563F2A",
                           "bg_color": "#FFFFFF",
                           "bg_opa": 0
@@ -926,7 +926,7 @@
                   "oneLineMode": false,
                   "passwordMode": false,
                   "acceptedCharacters": "",
-                  "maxTextLength": 128
+                  "maxTextLength": 31
                 },
                 {
                   "objID": "12223d2e-5652-421b-bad3-faff2cb5fc6b",
@@ -11776,8 +11776,8 @@
             {
               "objID": "bae65739-be8c-4cf5-f502-b9b105d36067",
               "type": "LVGLImageWidget",
-              "left": 354,
-              "top": 410,
+              "left": 704,
+              "top": 405,
               "width": 87,
               "height": 70,
               "customInputs": [],
@@ -25016,8 +25016,8 @@
             {
               "objID": "d2793565-3886-41e7-f9ca-9582d42a2fea",
               "type": "LVGLImageWidget",
-              "left": 354,
-              "top": 406,
+              "left": 704,
+              "top": 405,
               "width": 87,
               "height": 70,
               "customInputs": [],

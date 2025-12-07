@@ -1201,7 +1201,7 @@
                   "oneLineMode": false,
                   "passwordMode": false,
                   "acceptedCharacters": "",
-                  "maxTextLength": 128
+                  "maxTextLength": 31
                 },
                 {
                   "objID": "c5acbd04-2a91-4da0-a470-cec66a14bdc7",
