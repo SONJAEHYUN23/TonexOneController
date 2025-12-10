@@ -735,8 +735,8 @@
                     {
                       "objID": "6fc4996f-3218-489d-8656-6cf54af710bf",
                       "type": "LVGLImageWidget",
-                      "left": 32,
-                      "top": 5,
+                      "left": 14,
+                      "top": 0,
                       "width": 397,
                       "height": 133,
                       "customInputs": [],
@@ -755,7 +755,7 @@
                       "widthUnit": "content",
                       "heightUnit": "content",
                       "children": [],
-                      "widgetFlags": "ADV_HITTEST|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+                      "widgetFlags": "ADV_HITTEST|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
@@ -766,7 +766,14 @@
                       "disabledStateType": "literal",
                       "states": "",
                       "localStyles": {
-                        "objID": "7d6a09f1-f55a-403d-867c-fb6af66ba0b7"
+                        "objID": "7d6a09f1-f55a-403d-867c-fb6af66ba0b7",
+                        "definition": {
+                          "MAIN": {
+                            "DEFAULT": {
+                              "align": "CENTER"
+                            }
+                          }
+                        }
                       },
                       "group": "",
                       "groupIndex": 0,
