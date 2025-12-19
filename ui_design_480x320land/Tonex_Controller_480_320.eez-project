@@ -2728,10 +2728,10 @@
                 {
                   "objID": "a7b62923-440e-4cf0-9e4e-a9583c0c7bd9",
                   "type": "LVGLImageWidget",
-                  "left": 197,
-                  "top": 258,
-                  "width": 87,
-                  "height": 70,
+                  "left": 219,
+                  "top": 259,
+                  "width": 42,
+                  "height": 27,
                   "customInputs": [],
                   "customOutputs": [],
                   "style": {
@@ -2778,7 +2778,7 @@
                   "setPivot": false,
                   "pivotX": 0,
                   "pivotY": 0,
-                  "zoom": 192,
+                  "zoom": 350,
                   "angle": 0,
                   "innerAlign": "CENTER"
                 }
@@ -11824,8 +11824,8 @@
             {
               "objID": "a8a8cbe4-cf46-4e6c-abc4-172e032d5ec7",
               "type": "LVGLTabviewWidget",
-              "left": 5,
-              "top": 5,
+              "left": 0,
+              "top": 0,
               "width": 480,
               "height": 320,
               "customInputs": [],
@@ -23726,7 +23726,7 @@
                     {
                       "objID": "0fe6ed64-4ebe-4bf1-b63d-497e786a7833",
                       "type": "LVGLLabelWidget",
-                      "left": 413,
+                      "left": 417,
                       "top": 4,
                       "width": 12,
                       "height": 21,
@@ -23909,7 +23909,7 @@
                     {
                       "objID": "99b69d8c-05e9-460c-a92c-cd4d52393b79",
                       "type": "LVGLLabelWidget",
-                      "left": 413,
+                      "left": 417,
                       "top": 42,
                       "width": 12,
                       "height": 21,
