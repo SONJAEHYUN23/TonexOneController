@@ -1087,10 +1087,10 @@
                 {
                   "objID": "114b30e9-9dc8-460f-854e-711f54e6bb2c",
                   "type": "LVGLPanelWidget",
-                  "left": 410,
-                  "top": 143,
-                  "width": 40,
-                  "height": 40,
+                  "left": 415,
+                  "top": 147,
+                  "width": 30,
+                  "height": 30,
                   "customInputs": [],
                   "customOutputs": [],
                   "style": {
@@ -1109,7 +1109,7 @@
                   "heightUnit": "px",
                   "children": [],
                   "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "hiddenFlag": true,
+                  "hiddenFlag": false,
                   "hiddenFlagType": "literal",
                   "clickableFlag": true,
                   "clickableFlagType": "literal",
