@@ -221,6 +221,22 @@
       "localVariables": [],
       "userProperties": [],
       "name": "Gesture"
+    },
+    {
+      "objID": "fc90ba0a-86bc-4e70-9bc6-bf360a09d383",
+      "components": [],
+      "connectionLines": [],
+      "localVariables": [],
+      "userProperties": [],
+      "name": "ValueClicked"
+    },
+    {
+      "objID": "589c127a-e86e-4336-b3b9-084162572dd7",
+      "components": [],
+      "connectionLines": [],
+      "localVariables": [],
+      "userProperties": [],
+      "name": "ValueKeyboardOK"
     }
   ],
   "userPages": [
@@ -2924,7 +2940,15 @@
             "childStyles": []
           },
           "timeline": [],
-          "eventHandlers": [],
+          "eventHandlers": [
+            {
+              "objID": "3d2dd48b-ca81-4be3-f93c-6431c387ffd3",
+              "eventName": "READY",
+              "handlerType": "action",
+              "action": "ValueKeyboardOK",
+              "userData": 0
+            }
+          ],
           "leftUnit": "px",
           "topUnit": "px",
           "widthUnit": "px",
@@ -3413,7 +3437,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -92,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -3424,15 +3448,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "fceb273c-9b51-4b41-ab9a-e48243a64dac",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_NoiseGateThresholdValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -3593,7 +3626,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -3604,15 +3637,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "5a55570a-988b-4a8c-cca9-6b2ef9306c3b",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_NoiseGateReleaseValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -3773,7 +3815,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -3784,15 +3826,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "e1e025f8-0e60-42bf-b73e-4e530059bf98",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_NoiseGateDepthValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -4269,7 +4320,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -92,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -4280,15 +4331,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "15bd784c-97d6-416c-92aa-30504177f8f7",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_CompressorThresholdValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -4449,7 +4509,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -4460,15 +4520,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "17219045-6d00-4b33-c4a5-048fc8723705",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_CompressorAttackValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -4629,7 +4698,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -4640,15 +4709,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "7f355112-119e-41d7-fe4f-cd928d715889",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_CompressorGainValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -5165,7 +5243,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -5176,15 +5254,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "3f01ee4e-b1ca-44da-c5cf-af636353b90c",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_AmplifierGainValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -5345,7 +5432,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -5356,15 +5443,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "e3ce9e8e-ea24-40b2-8666-b57590c5bfa6",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_AmplifierVolumeValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -5525,7 +5621,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 77,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -5536,15 +5632,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ea067777-e90d-4aa9-ef02-b3c6af245c96",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_AmplifierPresenseValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -5705,7 +5810,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 133,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -5716,15 +5821,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "2a4c1677-ae61-40d1-a477-21569cc2c6da",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_AmplifierDepthValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -6071,7 +6185,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -92,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -6082,15 +6196,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "acae0791-17fa-428a-9375-ee703fa69fca",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_EQBassValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -6251,7 +6374,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -6262,15 +6385,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "a7e0e05f-0793-4ea7-a011-d61962f88a19",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_EQMidValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -6431,7 +6563,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -6442,15 +6574,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "1ebca8f1-14be-4028-c8d0-bc33785e73ef",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_EQMidQValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -6611,7 +6752,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 76,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -6622,15 +6763,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "008008e8-3f65-4189-e9e5-40f12205c33c",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_EQTrebleValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -7511,7 +7661,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -7522,15 +7672,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "f8aeb8a0-6bd0-4150-a5fc-1640fabb0a0b",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ModulationParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -7691,7 +7850,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -7702,15 +7861,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "21c9a437-2f5e-4f5c-e26b-1718766ffaa9",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ModulationParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -7871,7 +8039,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 76,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -7882,15 +8050,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "02ca4619-1f06-429f-bf6e-94b916b732bb",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ModulationParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -8051,7 +8228,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 133,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -8062,15 +8239,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ee8c3e4c-9e28-4978-abbf-5f007b543952",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ModulationParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -8951,7 +9137,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -8962,15 +9148,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "6e681bd6-77d8-449b-f342-05b8e076fb10",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_DelayTSValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -9253,7 +9448,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 77,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -9264,15 +9459,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "2d78a2fa-8564-424d-ac33-b0f87f8f8741",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_DelayFeedbackValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -9434,7 +9638,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 133,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -9445,15 +9649,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ac59ff57-9161-476c-d805-a76cfb81da04",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_DelayMixValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -10090,7 +10303,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -10101,15 +10314,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ff1255f2-294e-4cab-9489-f782c5584869",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ReverbMixValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -10270,7 +10492,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -10281,15 +10503,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "f4c097f2-6826-42d9-b973-245f0390f297",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ReverbTimeValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -10450,7 +10681,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 77,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -10461,15 +10692,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "a1a22120-6424-4eee-8320-87bea79e4289",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ReverbPredelayValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -10630,7 +10870,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 133,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -10641,15 +10881,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "75f1c048-b3c1-4cbc-d1fb-6771311f8976",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ReverbColorValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -11116,7 +11365,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -92,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -11127,15 +11376,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "c701ffc0-0d49-4a99-9b32-4229efebdd4a",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_BPMValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -11296,7 +11554,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": -36,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -11307,15 +11565,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "54b57083-b5b7-49de-c748-dcff7c0dfe9c",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_InputTrimValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -11476,7 +11743,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 21,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -11487,15 +11754,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "fb338a20-1b1c-4ae7-da2a-843a356aa378",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_TuningReferenceValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -11656,7 +11932,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 683,
                       "top": 76,
-                      "width": 16,
+                      "width": 100,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -11667,15 +11943,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "1f1d7b99-6840-4254-f954-579b00b91de4",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_VolumeValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -11834,9 +12119,176 @@
               "zoom": 256,
               "angle": 0,
               "innerAlign": "CENTER"
+            },
+            {
+              "objID": "d377ee44-b808-4bd4-fb3e-72214fd04832",
+              "type": "LVGLPanelWidget",
+              "left": 62,
+              "top": 33,
+              "width": 686,
+              "height": 423,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "97af3e4a-f461-4b1c-c7cf-2500a90b4262",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "ui_settings_dialog",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "px",
+              "children": [
+                {
+                  "objID": "9f29a959-ab3d-47a9-deb3-a09061991360",
+                  "type": "LVGLTextareaWidget",
+                  "left": 153,
+                  "top": -18,
+                  "width": 326,
+                  "height": 78,
+                  "customInputs": [],
+                  "customOutputs": [],
+                  "style": {
+                    "objID": "96bd2f1f-b2f4-4daf-836d-84bbda3c4673",
+                    "useStyle": "default",
+                    "conditionalStyles": [],
+                    "childStyles": []
+                  },
+                  "timeline": [],
+                  "eventHandlers": [],
+                  "identifier": "ui_settings_text_entry",
+                  "leftUnit": "px",
+                  "topUnit": "px",
+                  "widthUnit": "px",
+                  "heightUnit": "content",
+                  "children": [],
+                  "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "hiddenFlagType": "literal",
+                  "clickableFlag": true,
+                  "clickableFlagType": "literal",
+                  "flagScrollbarMode": "",
+                  "flagScrollDirection": "",
+                  "scrollSnapX": "",
+                  "scrollSnapY": "",
+                  "checkedStateType": "literal",
+                  "disabledStateType": "literal",
+                  "states": "",
+                  "localStyles": {
+                    "objID": "a39ea320-f0d4-4c69-bf34-5fc0f7fda299",
+                    "definition": {
+                      "MAIN": {
+                        "DEFAULT": {
+                          "text_font": "MONTSERRAT_48",
+                          "text_align": "CENTER",
+                          "border_width": 2,
+                          "text_color": "D1A60C",
+                          "bg_opa": 0
+                        }
+                      }
+                    }
+                  },
+                  "group": "",
+                  "groupIndex": 0,
+                  "text": "0",
+                  "textType": "literal",
+                  "placeholder": "",
+                  "oneLineMode": true,
+                  "passwordMode": false,
+                  "acceptedCharacters": "",
+                  "maxTextLength": 8
+                },
+                {
+                  "objID": "b853f848-f0a3-4a34-8bfe-591f627b3ac4",
+                  "type": "LVGLKeyboardWidget",
+                  "left": -12,
+                  "top": 64,
+                  "width": 657,
+                  "height": 322,
+                  "customInputs": [],
+                  "customOutputs": [],
+                  "style": {
+                    "objID": "89efcacc-f1c2-4a05-d81d-62f9791fbce7",
+                    "useStyle": "default",
+                    "conditionalStyles": [],
+                    "childStyles": []
+                  },
+                  "timeline": [],
+                  "eventHandlers": [
+                    {
+                      "objID": "a5198173-ea93-4329-f694-564b10a3fb10",
+                      "eventName": "READY",
+                      "handlerType": "action",
+                      "action": "ValueKeyboardOK",
+                      "userData": 0
+                    }
+                  ],
+                  "identifier": "ui_settings_keyboard",
+                  "leftUnit": "px",
+                  "topUnit": "px",
+                  "widthUnit": "px",
+                  "heightUnit": "px",
+                  "children": [],
+                  "widgetFlags": "GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "hiddenFlagType": "literal",
+                  "clickableFlag": true,
+                  "clickableFlagType": "literal",
+                  "flagScrollbarMode": "",
+                  "flagScrollDirection": "",
+                  "scrollSnapX": "",
+                  "scrollSnapY": "",
+                  "checkedStateType": "literal",
+                  "disabledStateType": "literal",
+                  "states": "",
+                  "localStyles": {
+                    "objID": "87ab31dd-d4b4-4a2c-cc60-f2eb2d6a6f33",
+                    "definition": {
+                      "MAIN": {
+                        "DEFAULT": {
+                          "align": "DEFAULT",
+                          "text_font": "MONTSERRAT_36"
+                        }
+                      }
+                    }
+                  },
+                  "group": "",
+                  "groupIndex": 0,
+                  "textarea": "ui_settings_text_entry",
+                  "mode": "NUMBER"
+                }
+              ],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlag": true,
+              "hiddenFlagType": "literal",
+              "clickableFlag": true,
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "7f055d2e-54f6-42a9-9b81-921e7f6e0d0a",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "border_color": "#81562e",
+                      "bg_color": "2a2a2a"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0
             }
           ],
           "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC",
+          "hiddenFlag": false,
           "hiddenFlagType": "literal",
           "clickableFlag": true,
           "clickableFlagType": "literal",
@@ -12381,7 +12833,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -12392,15 +12844,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "e53e0b36-6961-4c9e-8a46-aa5318b28abd",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNRParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -12564,7 +13025,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -12575,15 +13036,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "dbf25c87-d603-45b8-ea8a-332bb52f1998",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNRParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -12747,7 +13217,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -12758,15 +13228,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "8d64019c-0a7e-463f-cb0a-a86d333edd44",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNRParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -12930,7 +13409,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -12941,15 +13420,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "2d2e7ea2-87ce-4ba5-b5ac-d861ee5b31f5",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNRParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -13113,7 +13601,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -13124,15 +13612,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "0f6d1cb2-7ede-4ae2-d281-fe62a09e4295",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNRParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -13618,7 +14115,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -13629,15 +14126,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "69635a85-ad7e-4b35-8a1e-1ad162618fd4",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValPreParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -13801,7 +14307,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -13812,15 +14318,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "561f7df4-e8c6-4158-eb0f-eae066cfbad2",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValPreParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -13984,7 +14499,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -13995,15 +14510,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "35a29fd6-5d9c-4a28-e8a6-5b2da5ab5bc6",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValPreParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -14167,7 +14691,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -14178,15 +14702,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "129f035d-6849-4057-d9ee-d1a8ffb12272",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValPreParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -14350,7 +14883,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -14361,15 +14894,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "1563c13b-5b19-4afd-c3d1-791d3ba86354",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValPreParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -14845,7 +15387,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -14856,15 +15398,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "a52cab5a-5a85-4c66-e0bc-94f486db3872",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDstParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -15028,7 +15579,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -15039,15 +15590,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "945f7389-72b1-4318-b8b9-d3c0fdce66db",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDstParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -15211,7 +15771,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -15222,15 +15782,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "3da1bdeb-438f-4d36-fda5-e54e2aae227e",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDstParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -15394,7 +15963,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -15405,15 +15974,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "593c717d-5a1f-4df2-989d-271a8a3944d1",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDstParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -15577,7 +16155,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -15588,15 +16166,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "7e8bea25-d993-47fd-8756-7c2b8a906dc1",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDstParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -16072,7 +16659,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -16083,15 +16670,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "d1520a1d-924c-41e3-dad2-4a75e1c9d6e3",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValAmpParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -16255,7 +16851,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -16266,15 +16862,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "6f54c378-82fd-4d11-d06a-2acf0b0c7a45",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValAmpParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -16438,7 +17043,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -16449,15 +17054,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "6780c144-053c-4173-d08c-6c45aa12f9d4",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValAmpParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -16621,7 +17235,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -16632,15 +17246,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "a42fe546-be0e-4406-fc4d-7962dbfeb697",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValAmpParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -16804,7 +17427,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -16815,15 +17438,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "c9b609e5-2121-487e-f500-f066f4b0abcc",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValAmpParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -17299,7 +17931,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -17310,15 +17942,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "7754ae2a-19c6-4623-ceae-2fa644150636",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValCabParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -17482,7 +18123,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -17493,15 +18134,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "1e5eb90c-bd9a-4347-b97b-aeb107f1fd44",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValCabParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -17665,7 +18315,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -17676,15 +18326,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "84eed9be-f7eb-448b-8712-5e62fdf06ec0",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValCabParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -17848,7 +18507,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -17859,15 +18518,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "4824ed1d-a56a-4605-a6b6-4821164a3aaf",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValCabParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -18031,7 +18699,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -18042,15 +18710,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "5a1d6058-ba31-47c7-95f9-75b83a0295c0",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValCabParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -18526,7 +19203,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -18537,15 +19214,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "d0e73143-49e1-406a-d2da-3d650d18e939",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValEQParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -18709,7 +19395,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -18720,15 +19406,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "77264791-e4a7-46e5-9537-bb246a80d26f",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValEQParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -18892,7 +19587,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -18903,15 +19598,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "855f3eb4-492c-4473-88ef-58b15cdf0b48",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValEQParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -19075,7 +19779,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -19086,15 +19790,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "be82d061-4601-403a-8fb0-6646611f639f",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValEQParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -19258,7 +19971,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -19269,15 +19982,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "0c5d383e-7d24-4421-b6a9-f2698f87fe9e",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValEQParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -19753,7 +20475,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -19764,15 +20486,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "e92c4665-c80d-4d50-f8fa-c7a4c2e475b3",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValModParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -19936,7 +20667,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -19947,15 +20678,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "82cd5a53-d2ba-4204-f6f1-cf8c55512e2c",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValModParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -20119,7 +20859,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -20130,15 +20870,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "bfc9f070-aff6-421d-8140-3af078f28bfa",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValModParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -20302,7 +21051,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -20313,15 +21062,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "bce6ea3c-db4d-4db8-fc34-1ebfed18f631",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValModParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -20485,7 +21243,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -20496,15 +21254,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "b4e3f59e-2a0b-4f83-8307-c56e8ca4373b",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValModParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -20980,7 +21747,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -20991,15 +21758,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ee82d655-cac2-46c3-be3a-fe5c0b6fc6e0",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDlyParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -21163,7 +21939,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -21174,15 +21950,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "354e66ad-3da4-4363-edd7-21703691481f",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDlyParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -21346,7 +22131,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -21357,15 +22142,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ad292355-fa0d-4594-ccfd-033a316633e5",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDlyParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -21529,7 +22323,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -21540,15 +22334,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "06b9ddfc-ea75-4c3f-e18e-ae049d80d8cc",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDlyParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -21712,7 +22515,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -21723,15 +22526,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "d8f6f5cc-6470-457e-cec1-e5e309f29f31",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValDlyParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -22207,7 +23019,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -22218,15 +23030,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "99f846e3-7a89-47f5-d6b4-e30fbc29db2b",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValRvbParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -22390,7 +23211,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -22401,15 +23222,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "aa2d374d-6fa4-4094-e477-0bb855d02b71",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValRvbParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -22573,7 +23403,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -22584,15 +23414,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "0fc00d6e-8579-4eae-d97f-43afba202c55",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValRvbParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -22756,7 +23595,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -22767,15 +23606,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "ae24432b-daab-4ba5-ecff-59e7de184641",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValRvbParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -22939,7 +23787,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -22950,15 +23798,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "e4b04559-909e-498f-a962-f19bc489e4c6",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValRvbParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -23434,7 +24291,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -23445,15 +24302,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "2f977e66-9c46-455c-ee27-7fd1c7959c5e",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNSParam0Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -23617,7 +24483,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -23628,15 +24494,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "2a5380c8-7ac1-4c06-d271-149e91b1c572",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNSParam1Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -23800,7 +24675,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -23811,15 +24686,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "27a18a3c-5546-4b49-b675-e778c381b5b8",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNSParam2Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -23983,7 +24867,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 77,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -23994,15 +24878,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "f4ac7d5e-af82-4978-966c-5a4c4c10bb65",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNSParam3Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -24166,7 +25059,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 133,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -24177,15 +25070,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "b66070b4-866b-46af-f085-337a8061ef08",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValNSParam4Value",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -24530,7 +25432,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -92,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -24541,15 +25443,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "1ab2b110-f2a2-410c-a91f-2e98fdc57e12",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValGlobInputLevelValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -24713,7 +25624,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": -36,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -24724,15 +25635,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "f8305746-bceb-4647-9524-de621ac728d8",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValGlobMasterVolValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -24896,7 +25816,7 @@
                       "type": "LVGLLabelWidget",
                       "left": 703,
                       "top": 21,
-                      "width": 16,
+                      "width": 80,
                       "height": 27,
                       "customInputs": [],
                       "customOutputs": [],
@@ -24907,15 +25827,24 @@
                         "childStyles": []
                       },
                       "timeline": [],
-                      "eventHandlers": [],
+                      "eventHandlers": [
+                        {
+                          "objID": "462e40d7-085c-4224-958c-c82d801a76f1",
+                          "eventName": "PRESSED",
+                          "handlerType": "action",
+                          "action": "ValueClicked",
+                          "userData": 0
+                        }
+                      ],
                       "identifier": "ui_ValPatchVolValue",
                       "leftUnit": "px",
                       "topUnit": "px",
-                      "widthUnit": "content",
+                      "widthUnit": "px",
                       "heightUnit": "content",
                       "children": [],
                       "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
                       "hiddenFlagType": "literal",
+                      "clickableFlag": true,
                       "clickableFlagType": "literal",
                       "flagScrollbarMode": "",
                       "flagScrollDirection": "",
@@ -25074,6 +26003,172 @@
               "zoom": 256,
               "angle": 0,
               "innerAlign": "CENTER"
+            },
+            {
+              "objID": "46af83d7-4068-425d-e319-48e291286693",
+              "type": "LVGLPanelWidget",
+              "left": 62,
+              "top": 33,
+              "width": 686,
+              "height": 423,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "fd75df6d-9ca6-41b0-8570-670badd3f643",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "ui_val_settings_dialog",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "px",
+              "children": [
+                {
+                  "objID": "b5a18072-e685-4260-8a9e-07d133fa9677",
+                  "type": "LVGLTextareaWidget",
+                  "left": 153,
+                  "top": -18,
+                  "width": 326,
+                  "height": 78,
+                  "customInputs": [],
+                  "customOutputs": [],
+                  "style": {
+                    "objID": "ae0f127c-c4c5-461e-f7b7-850100ce931e",
+                    "useStyle": "default",
+                    "conditionalStyles": [],
+                    "childStyles": []
+                  },
+                  "timeline": [],
+                  "eventHandlers": [],
+                  "identifier": "ui_val_settings_text_entry",
+                  "leftUnit": "px",
+                  "topUnit": "px",
+                  "widthUnit": "px",
+                  "heightUnit": "content",
+                  "children": [],
+                  "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "hiddenFlagType": "literal",
+                  "clickableFlag": true,
+                  "clickableFlagType": "literal",
+                  "flagScrollbarMode": "",
+                  "flagScrollDirection": "",
+                  "scrollSnapX": "",
+                  "scrollSnapY": "",
+                  "checkedStateType": "literal",
+                  "disabledStateType": "literal",
+                  "states": "",
+                  "localStyles": {
+                    "objID": "3db1e1b1-be80-4da4-fc2a-1ccc56ca9b44",
+                    "definition": {
+                      "MAIN": {
+                        "DEFAULT": {
+                          "text_font": "MONTSERRAT_48",
+                          "text_align": "CENTER",
+                          "border_width": 2,
+                          "text_color": "D1A60C",
+                          "bg_opa": 0
+                        }
+                      }
+                    }
+                  },
+                  "group": "",
+                  "groupIndex": 0,
+                  "text": "0",
+                  "textType": "literal",
+                  "placeholder": "",
+                  "oneLineMode": true,
+                  "passwordMode": false,
+                  "acceptedCharacters": "",
+                  "maxTextLength": 8
+                },
+                {
+                  "objID": "9b2d5e55-6eb1-4ac0-da26-f6e415bbf87e",
+                  "type": "LVGLKeyboardWidget",
+                  "left": -11,
+                  "top": 60,
+                  "width": 664,
+                  "height": 331,
+                  "customInputs": [],
+                  "customOutputs": [],
+                  "style": {
+                    "objID": "1138acf7-7c77-4152-a46c-3e7359b438a1",
+                    "useStyle": "default",
+                    "conditionalStyles": [],
+                    "childStyles": []
+                  },
+                  "timeline": [],
+                  "eventHandlers": [
+                    {
+                      "objID": "72e68eb4-2bba-433c-960b-8abb0c490fcd",
+                      "eventName": "READY",
+                      "handlerType": "action",
+                      "action": "ValueKeyboardOK",
+                      "userData": 0
+                    }
+                  ],
+                  "identifier": "ui_val_settings_keyboard",
+                  "leftUnit": "px",
+                  "topUnit": "px",
+                  "widthUnit": "px",
+                  "heightUnit": "px",
+                  "children": [],
+                  "widgetFlags": "GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "hiddenFlagType": "literal",
+                  "clickableFlag": true,
+                  "clickableFlagType": "literal",
+                  "flagScrollbarMode": "",
+                  "flagScrollDirection": "",
+                  "scrollSnapX": "",
+                  "scrollSnapY": "",
+                  "checkedStateType": "literal",
+                  "disabledStateType": "literal",
+                  "states": "",
+                  "localStyles": {
+                    "objID": "2564e3c8-9a32-43ca-9d1c-5b1bc1ed9d6c",
+                    "definition": {
+                      "MAIN": {
+                        "DEFAULT": {
+                          "align": "DEFAULT",
+                          "text_font": "MONTSERRAT_36"
+                        }
+                      }
+                    }
+                  },
+                  "group": "",
+                  "groupIndex": 0,
+                  "textarea": "ui_val_settings_text_entry",
+                  "mode": "NUMBER"
+                }
+              ],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlag": true,
+              "hiddenFlagType": "literal",
+              "clickableFlag": true,
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "46a4f4d7-cacc-481c-afc5-73410bb0a002",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "border_color": "#386a91",
+                      "bg_color": "2a2a2a"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0
             }
           ],
           "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC",
