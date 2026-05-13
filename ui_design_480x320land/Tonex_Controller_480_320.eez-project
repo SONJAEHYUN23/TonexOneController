@@ -2187,14 +2187,14 @@
                       "timeline": [],
                       "eventHandlers": [
                         {
-                          "objID": "171f4aeb-d857-4e13-8f61-0b4b0d056b11",
+                          "objID": "f89eca26-4088-4ba4-a10a-ef41220bdb1e",
                           "eventName": "LONG_PRESSED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
                         },
                         {
-                          "objID": "64fbf5ac-4f8a-490b-93c0-8696fcfc9344",
+                          "objID": "fdd952d5-00b6-4d31-9612-266b3405f420",
                           "eventName": "SHORT_CLICKED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",

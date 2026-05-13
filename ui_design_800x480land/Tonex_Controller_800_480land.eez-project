@@ -2262,7 +2262,7 @@
                       "eventHandlers": [
                         {
                           "objID": "8297d0e5-6e01-4410-aeb2-2cd46f7d469f",
-                          "eventName": "PRESSING",
+                          "eventName": "LONG_PRESSED",
                           "handlerType": "action",
                           "action": "EffectIconClicked",
                           "userData": 0
