@@ -73,7 +73,6 @@ extern const lv_img_dsc_t img_wifi_conn;
 extern const lv_img_dsc_t img_wifi_disconn;
 extern const lv_img_dsc_t img_settings;
 extern const lv_img_dsc_t img_effect_icon_amp_off;
-extern const lv_img_dsc_t img_effect_icon_amp_on;
 extern const lv_img_dsc_t img_effect_icon_cab_off;
 extern const lv_img_dsc_t img_effect_icon_cab_on;
 extern const lv_img_dsc_t img_effect_icon_comp_off;
@@ -122,6 +121,7 @@ extern const lv_img_dsc_t img_tc_off;
 extern const lv_img_dsc_t img_tc_on;
 extern const lv_img_dsc_t img_amp_disabled;
 extern const lv_img_dsc_t img_cab_disabled;
+extern const lv_img_dsc_t img_home_button;
 
 #ifndef EXT_IMG_DESC_T
 #define EXT_IMG_DESC_T
@@ -132,7 +132,6 @@ typedef struct _ext_img_desc_t {
 #endif
 
 extern const ext_img_desc_t images[115];
-
 
 #ifdef __cplusplus
 }
