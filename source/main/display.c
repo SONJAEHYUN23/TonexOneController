@@ -704,6 +704,17 @@ void action_parameter_changed(lv_event_t * e)
         } break;
     }
 }
+
+void action_show_main_page(lv_event_t * e)
+{
+    loadScreen(SCREEN_ID_SCREEN_MAIN);
+}
+
+void action_show_sub_main_page(lv_event_t * e)
+{
+    loadScreen(SCREEN_ID_SCREEN1);
+}
+
 #endif  //CONFIG_TONEX_CONTROLLER_DISPLAY_FULL_UI
 
 /****************************************************************************
