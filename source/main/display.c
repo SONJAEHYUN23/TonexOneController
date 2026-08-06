@@ -1104,12 +1104,14 @@ static  __attribute__((unused)) uint8_t update_ui_element(tUIUpdate* update)
 #if CONFIG_TONEX_CONTROLLER_HAS_DISPLAY
     __attribute__((unused)) char value_string[20];
     lv_obj_t* element_1 = NULL;
-
+    lv_obj_t* element_2 = NULL;
     switch (update->ElementID)
     {
         case UI_ELEMENT_USB_STATUS:
         {
             element_1 = objects.ui_usb_status_fail;
+            element_2 = objects.ui_usb_status_fail_1;
+
 
             if (update->Value == 1)
             {
@@ -1151,16 +1153,22 @@ static  __attribute__((unused)) uint8_t update_ui_element(tUIUpdate* update)
         case UI_ELEMENT_BT_STATUS:
         {
             element_1 = objects.ui_bt_status_conn;
+            element_2 = objects.ui_bt_status_conn_1;
+
         } break;
 
         case UI_ELEMENT_WIFI_STATUS:
         {
             element_1 = objects.ui_wi_fi_status_conn;
+            element_2 = objects.ui_wi_fi_status_conn_1;
+
         } break;
 
         case UI_ELEMENT_PRESET_NAME:
         {
             element_1 = objects.ui_preset_heading_label;
+            element_2 = objects.ui_preset_heading_label_1;
+
         } break;
 
         case UI_ELEMENT_BANK_INDEX:
@@ -1226,37 +1234,53 @@ static  __attribute__((unused)) uint8_t update_ui_element(tUIUpdate* update)
         case UI_ACTION_SET_STATE:
         {
             // check the element
-            if (element_1 == objects.ui_usb_status_fail)
+            if (element_1 == objects.ui_usb_status_fail ||
+                element_2 == objects.ui_usb_status_fail_1)
             {
                 if (update->Value == 0)
                 {
                     // show the USB disconnected image
                     lv_obj_add_flag(objects.ui_usb_status_ok, LV_OBJ_FLAG_HIDDEN);
                     lv_obj_clear_flag(objects.ui_usb_status_fail, LV_OBJ_FLAG_HIDDEN);
+
+                    lv_obj_add_flag(objects.ui_usb_status_ok_1, LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_clear_flag(objects.ui_usb_status_fail_1, LV_OBJ_FLAG_HIDDEN);
                 }
                 else
                 {
                     // show the USB connected image
                     lv_obj_add_flag(objects.ui_usb_status_fail, LV_OBJ_FLAG_HIDDEN);
                     lv_obj_clear_flag(objects.ui_usb_status_ok, LV_OBJ_FLAG_HIDDEN);
+
+                    lv_obj_add_flag(objects.ui_usb_status_fail_1, LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_clear_flag(objects.ui_usb_status_ok_1, LV_OBJ_FLAG_HIDDEN);
                 }
             }
-            else if (element_1 == objects.ui_bt_status_conn)
+            else if (element_1 == objects.ui_bt_status_conn ||
+                     element_2 == objects.ui_bt_status_conn_1   )
             {
                 if (update->Value == 0)
                 {
                     // show the BT disconnected image
                     lv_obj_add_flag(objects.ui_bt_status_conn, LV_OBJ_FLAG_HIDDEN);
                     lv_obj_clear_flag(objects.ui_bt_status_disconn, LV_OBJ_FLAG_HIDDEN);
+
+                    lv_obj_add_flag(objects.ui_bt_status_conn_1, LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_clear_flag(objects.ui_bt_status_disconn_1, LV_OBJ_FLAG_HIDDEN);
                 }
                 else
                 {
                     // show the BT connected image
                     lv_obj_add_flag(objects.ui_bt_status_disconn, LV_OBJ_FLAG_HIDDEN);
                     lv_obj_clear_flag(objects.ui_bt_status_conn, LV_OBJ_FLAG_HIDDEN);
+
+                    lv_obj_add_flag(objects.ui_bt_status_disconn_1, LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_clear_flag(objects.ui_bt_status_conn_1, LV_OBJ_FLAG_HIDDEN);
+                    
                 }
             }
-            else if (element_1 == objects.ui_wi_fi_status_conn)
+            else if (element_1 == objects.ui_wi_fi_status_conn ||
+                     element_2 == objects.ui_wi_fi_status_conn_1  )
             {
                 if (update->Value == 0)
                 {
@@ -1265,6 +1289,9 @@ static  __attribute__((unused)) uint8_t update_ui_element(tUIUpdate* update)
                     // show the Wifi disconnected image
                     lv_obj_add_flag(objects.ui_wi_fi_status_conn, LV_OBJ_FLAG_HIDDEN);
                     lv_obj_clear_flag(objects.ui_wi_fi_status_disconn, LV_OBJ_FLAG_HIDDEN);
+
+                    lv_obj_add_flag(objects.ui_wi_fi_status_conn_1, LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_clear_flag(objects.ui_wi_fi_status_disconn_1, LV_OBJ_FLAG_HIDDEN);
                 }
                 else
                 {
@@ -1273,6 +1300,9 @@ static  __attribute__((unused)) uint8_t update_ui_element(tUIUpdate* update)
                     // show the WiFi connected image
                     lv_obj_add_flag(objects.ui_wi_fi_status_disconn, LV_OBJ_FLAG_HIDDEN);
                     lv_obj_clear_flag(objects.ui_wi_fi_status_conn, LV_OBJ_FLAG_HIDDEN);
+
+                    lv_obj_add_flag(objects.ui_wi_fi_status_disconn_1, LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_clear_flag(objects.ui_wi_fi_status_conn_1, LV_OBJ_FLAG_HIDDEN);
                 }
             }
 #if CONFIG_TONEX_CONTROLLER_DISPLAY_FULL_UI
@@ -1318,7 +1348,12 @@ static  __attribute__((unused)) uint8_t update_ui_element(tUIUpdate* update)
         case UI_ACTION_SET_LABEL_TEXT:
         {
 #if CONFIG_TONEX_CONTROLLER_DISPLAY_FULL_UI
+        if(element_1)
             lv_label_set_text(element_1, update->Text);
+
+        if(element_2)
+            lv_label_set_text(element_2, update->Text);
+
 #elif CONFIG_TONEX_CONTROLLER_DISPLAY_SMALL
             if (element_1 == objects.ui_preset_heading_label)
             {

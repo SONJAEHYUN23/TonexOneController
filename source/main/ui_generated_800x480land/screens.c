@@ -168,10 +168,25 @@ void create_screen_screen_main() {
                     {
                         lv_obj_t *parent_obj = obj;
                         {
+                            // ui_PresetHeadingLabel_1
+                            lv_obj_t *obj = lv_label_create(parent_obj);
+                            objects.ui_preset_heading_label_1 = obj;
+                            lv_obj_set_pos(obj, 6, 19);
+                            lv_obj_set_size(obj, 789, 60);
+                            lv_label_set_long_mode(obj, LV_LABEL_LONG_DOT);
+                            lv_obj_add_event_cb(obj, action_enable_skin_edit, LV_EVENT_LONG_PRESSED, (void *)0);
+                            lv_obj_add_flag(obj, LV_OBJ_FLAG_CLICKABLE);
+                            lv_obj_set_style_text_font(obj, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_SCROLLED);
+                            lv_obj_set_style_text_color(obj, lv_color_hex(0x4ea9f1), LV_PART_MAIN | LV_STATE_DEFAULT);
+                            lv_obj_set_style_text_font(obj, &lv_font_montserrat_48, LV_PART_MAIN | LV_STATE_DEFAULT);
+                            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+                            lv_label_set_text(obj, "Preset Name");
+                        }
+                        {
                             // ui_IconReverb_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_reverb_1 = obj;
-                            lv_obj_set_pos(obj, 619, 186);
+                            lv_obj_set_pos(obj, 620, 215);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_reverb_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -182,7 +197,7 @@ void create_screen_screen_main() {
                             // ui_IconDelay_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_delay_1 = obj;
-                            lv_obj_set_pos(obj, 517, 186);
+                            lv_obj_set_pos(obj, 518, 215);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_delay_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -193,7 +208,7 @@ void create_screen_screen_main() {
                             // ui_IconMod_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_mod_1 = obj;
-                            lv_obj_set_pos(obj, 416, 186);
+                            lv_obj_set_pos(obj, 417, 215);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_mod_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -204,7 +219,7 @@ void create_screen_screen_main() {
                             // ui_IconComp_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_comp_1 = obj;
-                            lv_obj_set_pos(obj, 314, 186);
+                            lv_obj_set_pos(obj, 315, 215);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_comp_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -215,7 +230,7 @@ void create_screen_screen_main() {
                             // ui_IconCab_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_cab_1 = obj;
-                            lv_obj_set_pos(obj, 416, 50);
+                            lv_obj_set_pos(obj, 417, 79);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_cab_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -226,7 +241,7 @@ void create_screen_screen_main() {
                             // ui_IconAmp_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_amp_1 = obj;
-                            lv_obj_set_pos(obj, 314, 50);
+                            lv_obj_set_pos(obj, 315, 79);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_amp_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -237,7 +252,7 @@ void create_screen_screen_main() {
                             // ui_IconGate_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_gate_1 = obj;
-                            lv_obj_set_pos(obj, 213, 50);
+                            lv_obj_set_pos(obj, 214, 79);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_gate_off);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_LONG_PRESSED, (void *)0);
@@ -248,7 +263,7 @@ void create_screen_screen_main() {
                             // ui_IconEQ_1
                             lv_obj_t *obj = lv_img_create(parent_obj);
                             objects.ui_icon_eq_1 = obj;
-                            lv_obj_set_pos(obj, 112, 50);
+                            lv_obj_set_pos(obj, 113, 79);
                             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                             lv_img_set_src(obj, &img_effect_icon_eq);
                             lv_obj_add_event_cb(obj, action_effect_icon_clicked, LV_EVENT_SHORT_CLICKED, (void *)0);
@@ -431,7 +446,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 664, 134);
+            lv_obj_set_pos(obj, 664, 164);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -449,7 +464,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 689, 169);
+            lv_obj_set_pos(obj, 689, 199);
             lv_obj_set_size(obj, 111, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -468,7 +483,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 486, 134);
+            lv_obj_set_pos(obj, 486, 164);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -479,7 +494,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 381, 134);
+            lv_obj_set_pos(obj, 381, 164);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -490,7 +505,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 280, 134);
+            lv_obj_set_pos(obj, 281, 164);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -501,7 +516,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 178, 133);
+            lv_obj_set_pos(obj, 179, 163);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -512,7 +527,18 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 584, 271);
+            lv_obj_set_pos(obj, 584, 301);
+            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+            static lv_point_t line_points[] = {
+                { 0, 0 },
+                { 0, 0 },
+                { 39, 0 }
+            };
+            lv_line_set_points(obj, line_points, 3);
+        }
+        {
+            lv_obj_t *obj = lv_line_create(parent_obj);
+            lv_obj_set_pos(obj, 483, 301);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -523,18 +549,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 483, 271);
-            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            static lv_point_t line_points[] = {
-                { 0, 0 },
-                { 0, 0 },
-                { 37, 0 }
-            };
-            lv_line_set_points(obj, line_points, 3);
-        }
-        {
-            lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 381, 271);
+            lv_obj_set_pos(obj, 381, 301);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -545,7 +560,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 686, 272);
+            lv_obj_set_pos(obj, 686, 302);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -556,7 +571,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 122, 200);
+            lv_obj_set_pos(obj, 122, 230);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -564,24 +579,6 @@ void create_screen_screen_main() {
                 { 570, 0 }
             };
             lv_line_set_points(obj, line_points, 3);
-        }
-        {
-            lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 80, 200);
-            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-            static lv_point_t line_points[] = {
-                { 0, 40 },
-                { 0, 16 },
-                { 0, 10 },
-                { 1, 6 },
-                { 3, 3 },
-                { 6, 1 },
-                { 10, 0 },
-                { 14, 0 },
-                { 20, 0 },
-                { 70, 0 }
-            };
-            lv_line_set_points(obj, line_points, 10);
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
@@ -600,11 +597,29 @@ void create_screen_screen_main() {
                 { 70, 0 }
             };
             lv_line_set_points(obj, line_points, 10);
+        }
+        {
+            lv_obj_t *obj = lv_line_create(parent_obj);
+            lv_obj_set_pos(obj, 80, 260);
+            lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+            static lv_point_t line_points[] = {
+                { 0, 40 },
+                { 0, 16 },
+                { 0, 10 },
+                { 1, 6 },
+                { 3, 3 },
+                { 6, 1 },
+                { 10, 0 },
+                { 14, 0 },
+                { 20, 0 },
+                { 70, 0 }
+            };
+            lv_line_set_points(obj, line_points, 10);
             lv_line_set_y_invert(obj, true);
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 307, 271);
+            lv_obj_set_pos(obj, 307, 301);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -615,18 +630,18 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 0, 133);
+            lv_obj_set_pos(obj, 0, 163);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
                 { 0, 0 },
-                { 115, 0 }
+                { 116, 0 }
             };
             lv_line_set_points(obj, line_points, 3);
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 112, 271);
+            lv_obj_set_pos(obj, 112, 301);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },
@@ -637,7 +652,7 @@ void create_screen_screen_main() {
         }
         {
             lv_obj_t *obj = lv_line_create(parent_obj);
-            lv_obj_set_pos(obj, 483, 134);
+            lv_obj_set_pos(obj, 483, 164);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             static lv_point_t line_points[] = {
                 { 0, 0 },

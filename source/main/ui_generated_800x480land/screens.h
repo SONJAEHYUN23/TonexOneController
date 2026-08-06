@@ -35,6 +35,7 @@ typedef struct _objects_t {
     lv_obj_t *ui_usb_status_ok_1;
     lv_obj_t *sub_page_switch_botton;
     lv_obj_t *obj0;
+    lv_obj_t *ui_preset_heading_label_1;
     lv_obj_t *ui_icon_reverb_1;
     lv_obj_t *ui_icon_delay_1;
     lv_obj_t *ui_icon_mod_1;
