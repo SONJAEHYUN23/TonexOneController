@@ -1502,10 +1502,10 @@ uint8_t tonex_update_ui_parameters(void)
                     {
                         lv_obj_clear_state(objects.ui_reverb_enable_switch, LV_STATE_CHECKED);
 
-                            v_img_set_src(objects.ui_icon_reverb, 
+                            lv_img_set_src(objects.ui_icon_reverb, 
                                 (lv_obj_t*)&img_effect_icon_reverb_off);
 
-                            v_img_set_src(objects.ui_icon_reverb_1, 
+                            lv_img_set_src(objects.ui_icon_reverb_1, 
                                 (lv_obj_t*)&img_effect_icon_reverb_off);
                     }
                 } break;
