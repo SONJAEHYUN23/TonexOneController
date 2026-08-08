@@ -386,8 +386,7 @@ void tonex_action_parameter_changed(lv_event_t * e)
     {
         usb_modify_parameter(TONEX_PARAM_REVERB_MODEL, lv_dropdown_get_selected(obj));
     }
-    else if (obj == objects.ui_reverb_mix_slider ||
-             obj == objects.ui_reverb_mix_slider_1 )
+    else if (obj == objects.ui_reverb_mix_slider)
     { 
         // check which model is set
         switch (lv_dropdown_get_selected(objects.ui_reverb_model_dropdown))
@@ -820,8 +819,7 @@ void tonex_action_parameter_changed(lv_event_t * e)
             } break;
         }        
     }
-    else if (obj == objects.ui_delay_mix_slider ||
-             obj == objects.ui_delay_mix_slider_1)
+    else if (obj == objects.ui_delay_mix_slider)
     {
         // check which model is set
         switch (lv_dropdown_get_selected(objects.ui_delay_model_dropdown))
@@ -845,8 +843,7 @@ void tonex_action_parameter_changed(lv_event_t * e)
     {
         usb_modify_parameter(TONEX_PARAM_CABINET_TYPE, lv_dropdown_get_selected(obj));
     } 
-    else if (obj == objects.ui_amplifier_gain_slider ||
-         obj == objects.ui_amplifier_gain_slider_1)
+    else if (obj == objects.ui_amplifier_gain_slider)
     {
         usb_modify_parameter(TONEX_PARAM_MODEL_GAIN, ((float)lv_slider_get_value(obj))/10.0f);
     }
@@ -1307,8 +1304,8 @@ uint8_t tonex_update_ui_parameters(void)
                     lv_slider_set_range(objects.ui_amplifier_gain_slider, min, max);
                     lv_slider_set_value(objects.ui_amplifier_gain_slider, value, LV_ANIM_OFF);
 
-                    lv_slider_set_range(objects.ui_amplifier_gain_slider_1, min, max);
-                    lv_slider_set_value(objects.ui_amplifier_gain_slider_1, value, LV_ANIM_OFF);
+                    lv_bar_set_range(objects.ui_amplifier_gain_bar_1, min, max);
+                    lv_bar_set_value(objects.ui_amplifier_gain_bar_1, value, LV_ANIM_OFF);
 
                     sprintf(value_string, "%1.1f", param_entry->Value);
 
@@ -1570,8 +1567,8 @@ uint8_t tonex_update_ui_parameters(void)
                         lv_slider_set_range(objects.ui_reverb_mix_slider, round(param_entry->Min), round(param_entry->Max)); 
                         lv_slider_set_value(objects.ui_reverb_mix_slider, round(param_entry->Value), LV_ANIM_OFF);   
 
-                        lv_slider_set_range(objects.ui_reverb_mix_slider_1, round(param_entry->Min), round(param_entry->Max)); 
-                        lv_slider_set_value(objects.ui_reverb_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF); 
+                        lv_bar_set_range(objects.ui_reverb_mix_bar_1, round(param_entry->Min), round(param_entry->Max)); 
+                        lv_bar_set_value(objects.ui_reverb_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF); 
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
                         lv_label_set_text(objects.ui_reverb_mix_value, value_string);          
@@ -1639,8 +1636,8 @@ uint8_t tonex_update_ui_parameters(void)
                         lv_slider_set_range(objects.ui_reverb_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_reverb_mix_slider, round(param_entry->Value), LV_ANIM_OFF);       
                         
-                        lv_slider_set_range(objects.ui_reverb_mix_slider_1, round(param_entry->Min), round(param_entry->Max));
-                        lv_slider_set_value(objects.ui_reverb_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF);       
+                        lv_bar_set_range(objects.ui_reverb_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_reverb_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);       
                         
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
@@ -1710,8 +1707,8 @@ uint8_t tonex_update_ui_parameters(void)
                         lv_slider_set_range(objects.ui_reverb_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_reverb_mix_slider, round(param_entry->Value), LV_ANIM_OFF);       
                         
-                        lv_slider_set_range(objects.ui_reverb_mix_slider_1, round(param_entry->Min), round(param_entry->Max));
-                        lv_slider_set_value(objects.ui_reverb_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF);       
+                        lv_bar_set_range(objects.ui_reverb_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_reverb_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);       
                         
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
@@ -1783,8 +1780,8 @@ uint8_t tonex_update_ui_parameters(void)
                         lv_slider_set_range(objects.ui_reverb_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_reverb_mix_slider, round(param_entry->Value), LV_ANIM_OFF);       
                         
-                        lv_slider_set_range(objects.ui_reverb_mix_slider_1, round(param_entry->Min), round(param_entry->Max));
-                        lv_slider_set_value(objects.ui_reverb_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF);       
+                        lv_bar_set_range(objects.ui_reverb_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_reverb_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);       
                         
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
@@ -1853,8 +1850,8 @@ uint8_t tonex_update_ui_parameters(void)
                         lv_slider_set_range(objects.ui_reverb_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_reverb_mix_slider, round(param_entry->Value), LV_ANIM_OFF);       
                         
-                        lv_slider_set_range(objects.ui_reverb_mix_slider_1, round(param_entry->Min), round(param_entry->Max));
-                        lv_slider_set_value(objects.ui_reverb_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF);       
+                        lv_bar_set_range(objects.ui_reverb_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_reverb_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);       
                         
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
@@ -1922,8 +1919,8 @@ uint8_t tonex_update_ui_parameters(void)
                          lv_slider_set_range(objects.ui_reverb_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_reverb_mix_slider, round(param_entry->Value), LV_ANIM_OFF);       
                         
-                        lv_slider_set_range(objects.ui_reverb_mix_slider_1, round(param_entry->Min), round(param_entry->Max));
-                        lv_slider_set_value(objects.ui_reverb_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF);       
+                        lv_bar_set_range(objects.ui_reverb_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_reverb_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);       
                         
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
@@ -2665,8 +2662,8 @@ uint8_t tonex_update_ui_parameters(void)
                         lv_slider_set_range(objects.ui_delay_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_delay_mix_slider, round(param_entry->Value), LV_ANIM_OFF);    
                               
-                        lv_slider_set_range(objects.ui_delay_mix_slider_1, round(param_entry->Min), round(param_entry->Max));
-                        lv_slider_set_value(objects.ui_delay_mix_slider_1, round(param_entry->Value), LV_ANIM_OFF);    
+                        lv_bar_set_range(objects.ui_delay_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_delay_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);    
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
                         lv_label_set_text(objects.ui_delay_mix_value, value_string);      
@@ -2761,13 +2758,20 @@ uint8_t tonex_update_ui_parameters(void)
                     { 
                         lv_slider_set_range(objects.ui_delay_mix_slider, round(param_entry->Min), round(param_entry->Max));
                         lv_slider_set_value(objects.ui_delay_mix_slider, round(param_entry->Value), LV_ANIM_OFF);   
-                                                                                                                                 
+                        
+                        
+                        lv_bar_set_range(objects.ui_delay_mix_bar_1, round(param_entry->Min), round(param_entry->Max));
+                        lv_bar_set_value(objects.ui_delay_mix_bar_1, round(param_entry->Value), LV_ANIM_OFF);   
+                                                                                                                
                         // show value and units
                         sprintf(value_string, "%d%%", (int)round(param_entry->Value));
                         lv_label_set_text(objects.ui_delay_mix_value, value_string);      
-                        
+                        lv_label_set_text(objects.ui_delay_mix_value_1, value_string);      
+
                         // set user data for later use
-                        lv_obj_set_user_data(objects.ui_delay_mix_value, (void*)(uintptr_t)TONEX_PARAM_DELAY_TAPE_MIX);                    
+                        lv_obj_set_user_data(objects.ui_delay_mix_value, (void*)(uintptr_t)TONEX_PARAM_DELAY_TAPE_MIX);   
+                        lv_obj_set_user_data(objects.ui_delay_mix_value_1, (void*)(uintptr_t)TONEX_PARAM_DELAY_TAPE_MIX);                    
+                 
                     }
                 } break;
 
@@ -3010,154 +3014,102 @@ static uint8_t current_parameter = 0;
 
 void display_adjust_current_parameter(float delta)
 {
-    lv_obj_t *slider = NULL;
+    tModellerParameter *param_ptr;
 
+    if (control_get_connected_modeller_params_locked_access(&param_ptr) != ESP_OK)
+        return;
 
-    switch(current_config_tab)
+    uint16_t param_id;
+
+    switch (current_config_tab)
     {
-
         case CONFIG_TAB_AMPLIFIER:
-
-            switch(current_parameter)
-            {
-                case 0:
-                    slider = objects.ui_amplifier_gain_slider;
-                    break;
-
-                case 1:
-                    slider = objects.ui_amplifier_volume_slider;
-                    break;
-
-                case 2:
-                    slider = objects.ui_amplifier_presense_slider;
-                    break;
-
-                case 3:
-                    slider = objects.ui_amplifier_depth_slider;
-                    break;
-            }
-
-            break;
-
-
-        case CONFIG_TAB_GATE:
-            slider = objects.ui_noise_gate_threshold_slider;
-            break;
-
-
-        case CONFIG_TAB_COMPRESSOR:
-            slider = objects.ui_compressor_threshold_slider;
-            break;
-
-
-        case CONFIG_TAB_EQ:
-            slider = objects.ui_eq_bass_slider;
-            break;
-
-
-        case CONFIG_TAB_MODULATION:
-
-            switch(current_parameter)
-            {
-                case 0:
-                    slider = objects.ui_modulation_param1_slider;
-                    break;
-
-                case 1:
-                    slider = objects.ui_modulation_param2_slider;
-                    break;
-
-                case 2:
-                    slider = objects.ui_modulation_param3_slider;
-                    break;
-
-                case 3:
-                    slider = objects.ui_modulation_param4_slider;
-                    break;
-            }
-
-            break;
-
+        {
+            param_id = TONEX_PARAM_MODEL_GAIN;
+        }
+        break;
 
         case CONFIG_TAB_DELAY:
+        {
+            int delay_model =
+                lv_dropdown_get_selected(objects.ui_delay_model_dropdown);
 
-            switch(current_parameter)
+            switch (delay_model)
             {
-                case 0:
-                    slider = objects.ui_delay_ts_slider;
+                case TONEX_DELAY_DIGITAL:
+                    param_id = TONEX_PARAM_DELAY_DIGITAL_MIX;
                     break;
 
-                case 1:
-                    slider = objects.ui_delay_feedback_slider;
+                case TONEX_DELAY_TAPE:
+                    param_id = TONEX_PARAM_DELAY_TAPE_MIX;
                     break;
 
-                case 2:
-                    slider = objects.ui_delay_mix_slider;
-                    break;
+                default:
+                    control_release_connected_modeller_params_locked_access();
+                    return;
             }
-
-            break;
-
+        }
+        break;
 
         case CONFIG_TAB_REVERB:
+        {
+            int reverb_model =
+                lv_dropdown_get_selected(objects.ui_reverb_model_dropdown);
 
-            switch(current_parameter)
+            switch (reverb_model)
             {
-                case 0:
-                    slider = objects.ui_reverb_mix_slider;
+                case TONEX_REVERB_SPRING_1:
+                    param_id = TONEX_PARAM_REVERB_SPRING1_MIX;
                     break;
 
-                case 1:
-                    slider = objects.ui_reverb_predelay_slider;
+                case TONEX_REVERB_SPRING_2:
+                    param_id = TONEX_PARAM_REVERB_SPRING2_MIX;
                     break;
+
+                case TONEX_REVERB_SPRING_3:
+                    param_id = TONEX_PARAM_REVERB_SPRING3_MIX;
+                    break;
+
+                case TONEX_REVERB_SPRING_4:
+                    param_id = TONEX_PARAM_REVERB_SPRING4_MIX;
+                    break;
+
+                case TONEX_REVERB_ROOM:
+                    param_id = TONEX_PARAM_REVERB_ROOM_MIX;
+                    break;
+
+                case TONEX_REVERB_PLATE:
+                    param_id = TONEX_PARAM_REVERB_PLATE_MIX;
+                    break;
+
+                default:
+                    control_release_connected_modeller_params_locked_access();
+                    return;
             }
-
-            break;
-
+        }
+        break;
 
         default:
+            control_release_connected_modeller_params_locked_access();
             return;
     }
 
+    float value = param_ptr[param_id].Value;
 
-    if(slider == NULL)
-        return;
+    // 엔코더 1칸당 0.1씩 변경
+    value += delta * 0.1f;
 
+    // Min / Max 제한
+    if (value < param_ptr[param_id].Min)
+        value = param_ptr[param_id].Min;
 
-    int value = lv_slider_get_value(slider);
+    if (value > param_ptr[param_id].Max)
+        value = param_ptr[param_id].Max;
 
-    value += (int)delta;
+    control_release_connected_modeller_params_locked_access();
 
-
-    if(value < lv_slider_get_min_value(slider))
-        value = lv_slider_get_min_value(slider);
-
-
-    if(value > lv_slider_get_max_value(slider))
-        value = lv_slider_get_max_value(slider);
-
-
-    lv_slider_set_value(
-        slider,
-        value,
-        LV_ANIM_OFF
-    );
-
-
-    /* 실제 Tonex 파라미터 변경 이벤트 발생 */
-    lv_event_send(
-        slider,
-        LV_EVENT_VALUE_CHANGED,
-        NULL
-    );
-    char msg[32];
-
-    snprintf(msg,
-            sizeof(msg),
-            "VALUE %d",
-            value);
-
-    UI_ShowToast(msg);
+    // 실제 Tonex 파라미터 변경
+    usb_modify_parameter(param_id, value);
 }
 
 /*     파라미터 선택         */

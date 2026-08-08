@@ -9,9 +9,8 @@
 #include "esp_log.h"
 #include "display.h"
 #include "screens.h"
-
 #include <stdio.h>
-
+#include "ui.h"
 #define ENC1_A 3
 #define ENC1_B 4
 
@@ -24,7 +23,6 @@
 #define MASTER_MIN -40.0f
 #define MASTER_MAX   3.0f
 #define MASTER_STEP  0.5f
-
 void usb_modify_parameter(uint16_t index, float value);
 
 typedef struct
@@ -39,6 +37,8 @@ typedef struct
 
 static encoder_t enc1;
 static encoder_t enc2;
+static lv_timer_t *master_popup_timer = NULL;
+static lv_anim_t master_popup_fade_anim;
 
 static const int8_t table[16] =
 {
@@ -53,6 +53,7 @@ static uint8_t enc2ButtonLast = 1;
 static TickType_t enc2PressTick = 0;
 static void toggleCurrentEffect(void);
 static uint8_t readEncoder(uint8_t pinA,uint8_t pinB)
+
 {
     uint8_t a,b;
 
@@ -62,52 +63,181 @@ static uint8_t readEncoder(uint8_t pinA,uint8_t pinB)
     return (a<<1)|b;
 }
 
-static void encoder1CW(void)
+// 마스터 팝업
+static void master_popup_fade_complete(void *obj)
 {
-    enc1.value+=MASTER_STEP;
+    lv_obj_add_flag(
+        (lv_obj_t *)obj,
+        LV_OBJ_FLAG_HIDDEN
+    );
+}
 
-    if(enc1.value>MASTER_MAX)
-        enc1.value=MASTER_MAX;
 
-    usb_modify_parameter(
-        TONEX_GLOBAL_MASTER_VOLUME,
-        enc1.value
+static void master_popup_hide(void)
+{
+    if (objects.ui_master_popup == NULL)
+        return;
+
+    lv_anim_del(
+        objects.ui_master_popup,
+        NULL
     );
 
-    ESP_LOGI("ENCODER","Master %.1f",enc1.value);
+    lv_anim_init(&master_popup_fade_anim);
 
-            char msg[32];
-
-        snprintf(msg, sizeof(msg),
-                "MASTER %.1f dB",
-                enc1.value);
-
-        UI_ShowToast(msg);
-        }
-
-static void encoder1CCW(void)
-{
-    enc1.value-=MASTER_STEP;
-
-    if(enc1.value<MASTER_MIN)
-        enc1.value=MASTER_MIN;
-
-    usb_modify_parameter(
-        TONEX_GLOBAL_MASTER_VOLUME,
-        enc1.value
+    lv_anim_set_var(
+        &master_popup_fade_anim,
+        objects.ui_master_popup
     );
 
-    ESP_LOGI("ENCODER","Master %.1f",enc1.value);
+    lv_anim_set_values(
+        &master_popup_fade_anim,
+        255,
+        0
+    );
 
-        char msg[32];
+    lv_anim_set_duration(
+        &master_popup_fade_anim,
+        500
+    );
 
-        snprintf(msg, sizeof(msg),
-                "MASTER %.1f dB",
-                enc1.value);
+    lv_anim_set_exec_cb(
+        &master_popup_fade_anim,
+        (lv_anim_exec_xcb_t)lv_obj_set_style_opa
+    );
 
-        UI_ShowToast(msg);
+    lv_anim_set_completed_cb(
+        &master_popup_fade_anim,
+        master_popup_fade_complete
+    );
+
+    lv_anim_start(&master_popup_fade_anim);
+}
+
+
+static void master_popup_timer_cb(lv_timer_t *timer)
+{
+    master_popup_hide();
+
+    lv_timer_del(timer);
+
+    master_popup_timer = NULL;
+}
+
+
+static void master_popup_show(void)
+{
+    lv_obj_t *popup = objects.ui_master_popup;
+
+    if (popup == NULL)
+        return;
+
+    // 기존 Fade 애니메이션 제거
+    lv_anim_del(popup, NULL);
+
+    // Popup 표시
+    lv_obj_clear_flag(
+        popup,
+        LV_OBJ_FLAG_HIDDEN
+    );
+
+    // 완전 불투명
+    lv_obj_set_style_opa(
+        popup,
+        255,
+        LV_PART_MAIN
+    );
+
+    // 기존 타이머 제거
+    if (master_popup_timer != NULL)
+    {
+        lv_timer_del(master_popup_timer);
+        master_popup_timer = NULL;
+    }
+
+    // 4초 후 Fade Out
+    master_popup_timer = lv_timer_create(
+        master_popup_timer_cb,
+        4000,
+        NULL
+    );
+}
+
+
+static void master_popup_update(float value)
+{
+    int bar_value = (int)roundf(value);
+
+    lv_bar_set_range(
+        objects.ui_master_popup_bar,
+        MASTER_MIN,
+        MASTER_MAX
+    );
+
+    lv_bar_set_value(
+        objects.ui_master_popup_bar,
+        bar_value,
+        LV_ANIM_OFF
+    );
+
+    char value_string[16];
+
+    snprintf(
+        value_string,
+        sizeof(value_string),
+        "%.1f",
+        value
+    );
+
+    lv_label_set_text(
+        objects.ui_master_popup_value,
+        value_string
+    );
+}
+
+        static void encoder1CW(void)
+            {
+                enc1.value += MASTER_STEP;
+
+                if (enc1.value > MASTER_MAX)
+                    enc1.value = MASTER_MAX;
+
+                usb_modify_parameter(
+                    TONEX_GLOBAL_MASTER_VOLUME,
+                    enc1.value
+                );
+
+                ESP_LOGI(
+                    "ENCODER",
+                    "Master %.1f",
+                    enc1.value
+                );
+
+                master_popup_update(enc1.value);
+                master_popup_show();
+            }
+
+        static void encoder1CCW(void)
+           {
+            enc1.value -= MASTER_STEP;
+
+            if (enc1.value < MASTER_MIN)
+                enc1.value = MASTER_MIN;
+
+            usb_modify_parameter(
+                TONEX_GLOBAL_MASTER_VOLUME,
+                enc1.value
+            );
+
+            ESP_LOGI(
+                "ENCODER",
+                "Master %.1f",
+                enc1.value
+            );
+
+            master_popup_update(enc1.value);
+            master_popup_show();
         }
-
 
 static void encoder2CW(void)
     {
